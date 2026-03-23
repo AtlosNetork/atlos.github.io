@@ -7,14 +7,16 @@ This project is a plain static site. You can open `index.html` directly in a bro
 - `/`: landing page
 - `/privacy/`: privacy policy page
 - `/support/`: support page
-- `/verification/`: mentor certification verification page
+- `/verify/`: mentor certification verification page
 
 ## Files
 
 - `index.html`: landing page
 - `privacy/index.html`: privacy policy page
 - `support/index.html`: support page
-- `verification/index.html`: certification verification page
+- `verify/index.html`: certification verification page
+- `verify/credentials.json`: credential records
+- `verify/verify.js`: credential lookup logic
 - `styles.css`: shared styling for all pages
 
 ## Fastest way to publish
@@ -42,5 +44,5 @@ The exact values depend on the host you choose. Once the site is deployed, add t
 - Replace the homepage copy with your final Atlos messaging
 - Paste your Carrd privacy policy into `privacy/index.html`
 - Paste your Carrd support content into `support/index.html`
-- Replace the sample credential record in `verification/index.html`
+- Replace or expand the credential records in `verify/credentials.json`
 - Add your real domain once hosting is set up

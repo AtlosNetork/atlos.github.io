@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Credential Verification | Atlos</title>
+    <meta
+      name="description"
+      content="Verify Atlos mentor credentials by credential ID."
+    >
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="/">Atlos</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="/">Home</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="/support/">Support</a>
+          <a class="active" href="/verify/">Verification</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="eyebrow">Verification</p>
+          <h1>Credential Verification</h1>
+          <p class="lede">
+            This page confirms the validity of an Atlos mentor credential.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <article class="verification-card" id="verification-card" hidden>
+            <div class="verification-header">
+              <div>
+                <p class="section-label">Mentor Information</p>
+                <h2 id="credential-name">Loading...</h2>
+                <p class="verification-subtitle" id="credential-title"></p>
+              </div>
+              <span class="status-badge" id="credential-status-badge"></span>
+            </div>
+
+            <div class="verification-section">
+              <p class="section-label">Credential Details</p>
+            </div>
+
+            <div class="verification-grid">
+              <div class="detail-item">
+                <p class="detail-label">Credential ID</p>
+                <p class="detail-value" id="credential-id"></p>
+              </div>
+              <div class="detail-item">
+                <p class="detail-label">Issue Date</p>
+                <p class="detail-value" id="credential-issue-date"></p>
+              </div>
+              <div class="detail-item">
+                <p class="detail-label">Status</p>
+                <p class="detail-value" id="credential-status"></p>
+              </div>
+            </div>
+
+            <div class="verification-section top-gap">
+              <p class="section-label">Description</p>
+              <p class="verification-copy" id="credential-description"></p>
+            </div>
+          </article>
+
+          <article class="verification-card verification-state" id="verification-message">
+            <p class="section-label">Verification</p>
+            <h2 id="message-title">Checking credential</h2>
+            <p class="verification-copy" id="message-body">
+              Please wait while Atlos retrieves this credential record.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>&copy; 2026 Atlos. Built for the next generation of athletes.</p>
+      </div>
+    </footer>
+
+    <script src="./verify.js" defer></script>
+  </body>
+  </html>

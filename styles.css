@@ -30,7 +30,7 @@ body {
   font-family: "Wix Madefor Text", "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  }
+}
 
 a {
   color: inherit;
@@ -343,6 +343,10 @@ h3 {
   color: var(--muted);
   font-size: 1.02rem;
   line-height: 1.75;
+}
+
+.verification-state {
+  padding: 30px;
 }
 
 .top-gap {

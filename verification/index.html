@@ -2,86 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mentor Certification Verification | Atlos</title>
     <meta
-      name="description"
-      content="Verify mentor certifications issued by Atlos."
+      http-equiv="refresh"
+      content="0; url=/verify/"
     >
-    <link rel="stylesheet" href="../styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Redirecting | Atlos</title>
+    <script>
+      const target = `/verify/${window.location.search || ""}`;
+      window.location.replace(target);
+    </script>
   </head>
-  <body>
-    <header class="site-header">
-      <div class="container nav-wrap">
-        <a class="brand" href="/">Atlos</a>
-        <nav class="site-nav" aria-label="Primary navigation">
-          <a href="/">Home</a>
-          <a href="/privacy/">Privacy</a>
-          <a href="/support/">Support</a>
-          <a class="active" href="/verification/">Verification</a>
-        </nav>
-      </div>
-    </header>
-
-    <main class="page-main">
-      <section class="page-hero">
-        <div class="container narrow">
-          <p class="eyebrow">Verification</p>
-          <h1>Credential Verification</h1>
-          <p class="lede">
-            This page confirms the validity of an Atlos mentor credential.
-          </p>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container narrow">
-          <article class="verification-card">
-            <div class="verification-header">
-              <div>
-                <p class="section-label">Mentor Information</p>
-                <h2>Jordan Avery</h2>
-                <p class="verification-subtitle">Atlos Certified Mentor</p>
-              </div>
-              <span class="status-badge">Verified</span>
-            </div>
-
-            <div class="verification-section">
-              <p class="section-label">Credential Details</p>
-            </div>
-
-            <div class="verification-grid">
-              <div class="detail-item">
-                <p class="detail-label">Credential ID</p>
-                <p class="detail-value">ATLOS-M-2026-0001</p>
-              </div>
-              <div class="detail-item">
-                <p class="detail-label">Issue Date</p>
-                <p class="detail-value">March 23, 2026</p>
-              </div>
-              <div class="detail-item">
-                <p class="detail-label">Status</p>
-                <p class="detail-value">Verified</p>
-              </div>
-            </div>
-
-            <div class="verification-section top-gap">
-              <p class="section-label">Description</p>
-              <p class="verification-copy">
-                This credential is issued to mentors who have completed Atlos
-                onboarding and fulfilled the requirements for structured
-                mentorship within the platform.
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-wrap">
-        <p>&copy; 2026 Atlos. Built for the next generation of athletes.</p>
-      </div>
-    </footer>
-  </body>
+  <body></body>
   </html>
