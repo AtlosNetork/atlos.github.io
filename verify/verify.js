@@ -38,10 +38,6 @@ async function loadCredential() {
   const credentialId = params.get("id");
 
   if (!credentialId) {
-    showMessage(
-      "Credential ID required",
-      "No credential ID was provided in the URL. Please use a verification link that includes an id parameter."
-    );
     return;
   }
 

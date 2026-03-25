@@ -349,6 +349,11 @@ h3 {
   padding: 30px;
 }
 
+.info-section + .info-section {
+  padding-top: 24px;
+  border-top: 1px solid rgba(221, 183, 112, 0.14);
+}
+
 .top-gap {
   margin-top: 24px;
 }
