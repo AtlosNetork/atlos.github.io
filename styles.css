@@ -24,9 +24,9 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    radial-gradient(circle at top, rgba(221, 183, 112, 0.18), transparent 30%),
-    linear-gradient(180deg, #f8f8f5 0%, var(--bg) 100%);
-  color: #232a39;
+    radial-gradient(circle at top, rgba(221, 183, 112, 0.18), transparent 28%),
+    linear-gradient(180deg, #2a3245 0%, var(--surface-strong) 100%);
+  color: var(--text);
   font-family: "Wix Madefor Text", "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
@@ -54,8 +54,8 @@ main {
   top: 0;
   z-index: 10;
   backdrop-filter: blur(12px);
-  background: rgba(244, 244, 241, 0.9);
-  border-bottom: 1px solid rgba(35, 42, 57, 0.08);
+  background: rgba(35, 42, 57, 0.82);
+  border-bottom: 1px solid rgba(221, 183, 112, 0.12);
 }
 
 .nav-wrap,
@@ -75,7 +75,7 @@ main {
   font-weight: 700;
   letter-spacing: 0.04em;
   text-decoration: none;
-  color: #232a39;
+  color: var(--text);
 }
 
 .site-nav {
@@ -87,7 +87,7 @@ main {
 .site-nav a {
   padding: 10px 14px;
   border-radius: 999px;
-  color: rgba(35, 42, 57, 0.74);
+  color: rgba(254, 254, 254, 0.78);
   text-decoration: none;
   transition: background 150ms ease, color 150ms ease;
 }
@@ -170,17 +170,8 @@ h3 {
   line-height: 1.2;
 }
 
-.hero h2,
-.page-main h2,
-.feature-card h2,
-.panel h2,
-.content-card h2,
-.verification-card h2,
-.verification-card .detail-value,
-.feature-card,
-.panel,
-.content-card,
-.verification-card {
+.hero h1,
+.page-hero h1 {
   color: var(--text);
 }
 
@@ -188,18 +179,15 @@ h3 {
 .panel p,
 .content-card p,
 .detail-value {
-  color: #58606c;
+  color: var(--muted);
   font-size: 1.05rem;
   line-height: 1.7;
 }
 
-.feature-card p,
-.feature-list,
-.panel p,
-.content-card p,
-.verification-card p,
-.verification-card .detail-label {
-  color: var(--muted);
+.feature-card,
+.panel,
+.content-card {
+  color: #232a39;
 }
 
 .actions {
@@ -223,8 +211,8 @@ h3 {
 
 .button.secondary {
   background: transparent;
-  color: #232a39;
-  border: 1px solid rgba(35, 42, 57, 0.16);
+  color: var(--text);
+  border: 1px solid rgba(254, 254, 254, 0.2);
 }
 
 .button:hover,
@@ -243,7 +231,7 @@ h3 {
 .verification-card {
   border: 1px solid var(--line);
   border-radius: 24px;
-  background: var(--surface);
+  background: rgba(244, 244, 241, 0.96);
   box-shadow: var(--shadow);
 }
 
@@ -251,6 +239,19 @@ h3 {
 .panel,
 .content-card {
   padding: 28px;
+}
+
+.feature-card h2,
+.panel h2,
+.content-card h2 {
+  color: #232a39;
+}
+
+.feature-card p,
+.feature-list,
+.panel p,
+.content-card p {
+  color: rgba(35, 42, 57, 0.78);
 }
 
 .policy-section + .policy-section {
@@ -284,6 +285,7 @@ h3 {
 .verification-card {
   padding: 30px;
   background: var(--surface-strong);
+  color: var(--text);
 }
 
 .verification-header {
@@ -364,8 +366,8 @@ h3 {
 
 .footer-wrap {
   padding-top: 18px;
-  border-top: 1px solid rgba(35, 42, 57, 0.08);
-  color: rgba(35, 42, 57, 0.68);
+  border-top: 1px solid rgba(221, 183, 112, 0.12);
+  color: rgba(254, 254, 254, 0.72);
   font-size: 0.95rem;
 }
 
