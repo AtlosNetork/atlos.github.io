@@ -87,7 +87,7 @@ main {
 .site-nav a {
   padding: 10px 14px;
   border-radius: 999px;
-  color: rgba(254, 254, 254, 0.78);
+  color: #fefefe;
   text-decoration: none;
   transition: background 150ms ease, color 150ms ease;
 }
