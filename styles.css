@@ -95,7 +95,7 @@ main {
 .site-nav a:hover,
 .site-nav a:focus-visible,
 .site-nav a.active {
-  background: rgba(221, 183, 112, 0.24);
+  background: var(--accent);
   color: #232a39;
 }
 
