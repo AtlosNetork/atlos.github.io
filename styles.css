@@ -89,14 +89,15 @@ main {
   border-radius: 999px;
   color: #fefefe;
   text-decoration: none;
-  transition: background 150ms ease, color 150ms ease;
+  transition: background 150ms ease, color 150ms ease, box-shadow 150ms ease;
 }
 
 .site-nav a:hover,
 .site-nav a:focus-visible,
 .site-nav a.active {
-  background: var(--accent);
-  color: #232a39;
+  background: #f0c87a;
+  color: #fefefe;
+  box-shadow: 0 10px 24px rgba(221, 183, 112, 0.32);
 }
 
 .hero,
